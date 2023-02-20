@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="ru.artbez.moviepop.screens.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_popFragment"
+            app:destination="@id/popFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_en1Fragment"
+            app:destination="@id/en1Fragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_en5Fragment"
+            app:destination="@id/en5Fragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_en2Fragment"
+            app:destination="@id/en2Fragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_en3Fragment"
+            app:destination="@id/en3Fragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_en4Fragment"
+            app:destination="@id/en4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.artbez.moviepop.screens.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_popFragment"
+            app:destination="@id/popFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_en1Fragment"
+            app:destination="@id/en1Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_en4Fragment"
+            app:destination="@id/en4Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_en3Fragment"
+            app:destination="@id/en3Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_en2Fragment"
+            app:destination="@id/en2Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_en5Fragment"
+            app:destination="@id/en5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popFragment"
+        android:name="ru.artbez.moviepop.screens.pop.PopFragment"
+        android:label="fragment_pop"
+        tools:layout="@layout/fragment_pop" >
+        <action
+            android:id="@+id/action_popFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_popFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/en1Fragment"
+        android:name="ru.artbez.moviepop.screens.en1.En1Fragment"
+        android:label="en1"
+        tools:layout="@layout/en1" >
+        <action
+            android:id="@+id/action_en1Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_en1Fragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/en2Fragment"
+        android:name="ru.artbez.moviepop.screens.en2.En2Fragment"
+        android:label="en2"
+        tools:layout="@layout/en2" >
+        <action
+            android:id="@+id/action_en2Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_en2Fragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/en3Fragment"
+        android:name="ru.artbez.moviepop.screens.en3.En3Fragment"
+        android:label="en3"
+        tools:layout="@layout/en3" >
+        <action
+            android:id="@+id/action_en3Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_en3Fragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/en4Fragment"
+        android:name="ru.artbez.moviepop.screens.en4.En4Fragment"
+        android:label="en4"
+        tools:layout="@layout/en4" >
+        <action
+            android:id="@+id/action_en4Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_en4Fragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/en5Fragment"
+        android:name="ru.artbez.moviepop.screens.en5.En5Fragment"
+        android:label="en5"
+        tools:layout="@layout/en5" >
+        <action
+            android:id="@+id/action_en5Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_en5Fragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+</navigation>
